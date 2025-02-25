@@ -38,7 +38,9 @@ Output: ***Markdown*** **_Markdown_**
 ### **2.3. Chèn link** 
 
 Sử dụng cú pháp []() để chèn link trong bài viết, với nội dung trong [] sẽ là thẻ alt text và nội dung trong () sẽ là đường link muốn điều hướng đến.  
+
 Ví dụ:`[Markdown](https://vi.wikipedia.org/wiki/Markdown)`  
+
 Output: [Markdown](https://vi.wikipedia.org/wiki/Markdown)
 
 ### **2.4 Chèn ảnh**
