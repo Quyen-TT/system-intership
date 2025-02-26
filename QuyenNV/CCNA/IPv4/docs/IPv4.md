@@ -10,7 +10,7 @@ IPv4 (Internet Protocol version 4) là phiên bản thứ tư của giao thức 
 
 Ba phiên bản này được phát triển vào những năm 1970 và đầu 1980 trong quá trình nghiên cứu và thử nghiệm giao thức mạng:
 
-* **IPv1 (1974):*** Là một phần của NCP (Network Control Protocol), một giao thức mạng tiền thân của TCP/IP.
+* **IPv1 (1974):** Là một phần của NCP (Network Control Protocol), một giao thức mạng tiền thân của TCP/IP.
 
 * **IPv2 (1978):** Một bản cải tiến, nhưng vẫn còn nhiều hạn chế về hiệu suất và khả năng mở rộng.
 
