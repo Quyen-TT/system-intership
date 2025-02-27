@@ -63,7 +63,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Địa chỉ lớp A sử dụng một octet đầu làm phần mạng, ba octet sau làm phần host.
   - Bit đầu của một địa chỉ lớp A luôn được giữ là 0.
   - Các địa chỉ mạng lớp A gồm: 1.0.0.0 à 127.0.0.0.
-  - Địa chỉ 127.0.0.1 là địa chỉ loopback trên các host.
+  - Địa chỉ 127.0.0.1 là địa chỉ loopback trên các host nên địa chỉ mạng lớp A sử dụng được gồm 1.0.0.0 à 126.0.0.0 (126 mạng).
   - Phần host có 24 bit => mỗi mạng lớp A có (2^24 – 2) host.
 
 ![Hình 3](/QuyenNV/CCNA/IPv4/images/anh3.png)
@@ -72,7 +72,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Địa chỉ lớp B sử dụng 2 octet đầu làm phần mạng, 2 octet sau làm phần host. 
   - 2 bit đầu của một IP lớp B sẽ luôn là 1 0.
   - Các địa chỉ mạng lớp B sẽ bao gồm: 128.0.0.0 -> 191.255.0.0.
-  - Có tất cả 214 mạng trong lớp B.
+  - Có tất cả 2^14 mạng trong lớp B.
   - Phần host: 16 bit => Một mạng lớp B có 2^16 – 2 host.
 
 ![Hình 4](/QuyenNV/CCNA/IPv4/images/anh4.png)
@@ -81,7 +81,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Địa chỉ lớp C sử dụng ba octet đầu làm phần mạng, một octet sau làm phần host.
   - Ba bit đầu của một địa chỉ lớp C luôn được giữ là 110.
   - Các địa chỉ mạng lớp C gồm: 192.0.0.0 -> 223.255.255.0.
-  - Có tất cả 221 mạng trong lớp C.
+  - Có tất cả 2^21 mạng trong lớp C.
   -   Phần host: 8 bit => Một mạng lớp C có 2^8 – 2 = 254 host.
 
 ![Hình 5](/QuyenNV/CCNA/IPv4/images/anh5.png)
