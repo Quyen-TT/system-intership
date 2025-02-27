@@ -176,6 +176,10 @@ Subnet mask là một dải 32 bit nhị phân đi kèm với một địa chỉ
 Số prefix: Subnet mask được sử dụng kèm với địa chỉ IP để một host có thể căn cứ vào đó xác dịnh được địa chỉ mạng tương ứng của địa chỉ này. Vì
 vậy, khi khai báo một địa chỉ IP luôn phải khai báo kèm theo một subnet mask. Tuy nhiên, subnet mask dù đã được viết dưới dạng số thập phân vẫn khá dài dòng nên để mô tả một địa chỉ IP một cách ngắn gọn hơn, người ta dùng một đại lượng được gọi là số prefix. Số prefix có thể hiểu một cách đơn giản là số bit mạng trong một địa chỉ IP, được viết ngay sau địa chỉ IP, và được ngăn cách với địa chỉ này bằng một dấu “/”.
 
+**Nguyên lý cơ bản của kỹ thuật chia subnet:** Để có thể chia nhỏ một mạng lớn thành nhiều mạng con bằng nhau, người ta thực hiện mượn thêm một số bit bên phần host để làm phần mạng, các bit mượn này được gọi là các bit subnet. Tùy thuộc vào số bit subnet mà ta có được các số lượng các mạng con khác nhau với các kích cỡ khác nhau:
+
+![Hình 8](/QuyenNV/CCNA/IPv4/images/anh8.png)
+
 # Tài liệu tham khảo
 
 [Chương 1 - Địa chỉ IPv4, Chia subnet, VLSM, Summary - VnPro](https://vnpro.vn/thu-vien/chuong-1-dia-chi-ipv4-chia-subnet-vlsm-summary-4108.html)
