@@ -62,7 +62,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
 - Lớp A:  
   - Địa chỉ lớp A sử dụng một octet đầu làm phần mạng, ba octet sau làm phần host.
   - Bit đầu của một địa chỉ lớp A luôn được giữ là 0.
-  - Các địa chỉ mạng lớp A gồm: 1.0.0.0 à 127.0.0.0.
+  - Các địa chỉ mạng lớp A gồm: 1.0.0.0 -> 127.0.0.0.
   - Địa chỉ 127.0.0.1 là địa chỉ loopback trên các host nên địa chỉ mạng lớp A sử dụng được gồm 1.0.0.0 à 126.0.0.0 (126 mạng).
   - Phần host có 24 bit => mỗi mạng lớp A có (2^24 – 2) host.
 
