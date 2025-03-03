@@ -20,7 +20,7 @@ Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục,
 
 - Đảm bảo giao tiếp với môi trường truyền dẫn: Tầng vật lý xác định các đặc tính giao diện giữa các thiết bị mạng và môi trường truyền dẫn.
 
-- Biểu diễn dữ liệu dưới dạng bit: dữ liệu tầng vật lý là luồng bit liên tục 0 và l. Để truyền đi, các bit phải được mã hóa thành các tín hiệu điện, quang hoặc tần số vô tuyến.
+- Biểu diễn dữ liệu dưới dạng bit: dữ liệu tầng vật lý là luồng bit liên tục 0 và 11. Để truyền đi, các bit phải được mã hóa thành các tín hiệu điện, quang hoặc tần số vô tuyến.
 
 - Tốc độ truyền dẫn: Qui định số lượng bit được gửi đi trong một đơn vị thời gian và khoảng thời gian để truyền đi một bit.
 
@@ -56,7 +56,7 @@ Thiết bị liên quan: Switch, Bridge, Network Interface Card (NIC - Card mạ
 
 ### 2.3 Tầng mạng (Network Layer)
 
-**Tầng mạng** là tầng thứ ba trong mô hình OSI. Tầng này có trách nhiệm quản lý việc định tuyến và chuyển tiếp dữ liệu giữa các mạng khác nhau trong hệ thống mạng. Tầng mạng cung cấp các dịch vụ cho tầng trên là tầng giao vận và tầng dưới là tầng liên kết dữ liệu.
+**Tầng mạng** là tầng thứ ba trong mô hình OSI. Tầng này có trách nhiệm quản lý việc định tuyến và chuyển tiếp dữ liệu giữa các mạng khác nhau trong hệ thống mạng.
 
 Các giao thức phổ biến: IP (Internet Protocol), ICMP (Internet Control Message Protocol), và ARP (Address Resolution Protocol).
 
@@ -85,6 +85,8 @@ Các giao thức phổ biến:
 - UDP (User Datagram Protocol): Gửi dữ liệu nhanh nhưng không đảm bảo đầy đủ (kết nối không đáng tin cậy).
 
 ![OSI5](/QuyenNV/CCNA/OSI_TCP_IP/images/osi5.png)
+
+**Chức năng của tầng giao vận**
 
 - Chia nhỏ và tái tạo dữ liệu (Segmentation & Reassembly): Khi dữ liệu từ tầng ứng dụng quá lớn để gửi đi một lần, tầng giao vận chia dữ liệu thành nhiều segment nhỏ hơn. Khi đến đích, các segment này được lắp ghép lại theo đúng thứ tự để tái tạo dữ liệu ban đầu. TCP đánh số từng segment để đảm bảo chúng được ghép nối đúng.
 
