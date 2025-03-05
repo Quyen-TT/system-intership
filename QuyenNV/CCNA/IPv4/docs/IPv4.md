@@ -182,6 +182,33 @@ vậy, khi khai báo một địa chỉ IP luôn phải khai báo kèm theo mộ
 
 ![Hình 8](/QuyenNV/CCNA/IPv4/images/anh8.png)
 
+## 9.1 Tại sao cần phải chia subnet?
+-	Tiết kiệm địa chỉ IP
+  -	Đối với IPv4, số lượng địa chỉ IP có hạn. Nếu không chia subnet, nhiều địa chỉ có thể bị lãng phí khi cấp phát cho các mạng nhỏ.
+  -	Ví dụ: Một công ty chỉ có 20 thiết bị nhưng nếu sử dụng một mạng /24 (tương đương 256 địa chỉ), hơn 230 địa chỉ IP sẽ bị lãng phí.
+  -	Subnetting giúp sử dụng hiệu quả hơn không gian địa chỉ bằng cách tạo ra các mạng con với số lượng địa chỉ phù hợp.
+-	Giảm tắc nghẽn mạng, tăng hiệu suất
+  -	Mạng nhỏ hơn giúp giảm số lượng thiết bị trên cùng một miền quảng bá (broadcast domain), từ đó giảm lưu lượng broadcast và tăng hiệu suất mạng.
+  -	Subnetting giới hạn phạm vi broadcast bằng cách chia nhỏ mạng, giúp tối ưu hóa băng thông và giảm độ trễ.
+-	Cải thiện bảo mật
+  -	Chia subnet giúp cô lập các bộ phận khác nhau trong hệ thống mạng, hạn chế sự lan truyền của tấn công mạng hoặc lỗi hệ thống.
+  -	Có thể áp dụng các chính sách bảo mật riêng cho từng subnet.
+  -	Ví dụ: Một công ty có thể chia subnet riêng cho nhân viên, khách hàng, và hệ thống máy chủ để bảo vệ dữ liệu quan trọng.
+-	Quản lý dễ dàng hơn
+  -	Việc tổ chức mạng thành nhiều subnet giúp quản trị viên dễ dàng kiểm soát và giám sát lưu lượng mạng.
+  -	Dễ dàng xác định các sự cố mạng và khoanh vùng lỗi nhanh hơn.
+## 9.2 Các kiểu chia subnet
+-	Chia subnet cố định (FLSM - Fixed Length Subnet Mask)
+  -	Trong FLSM, tất cả các subnet có cùng kích thước, sử dụng cùng một subnet mask, và mỗi subnet có số lượng host như nhau.
+  -	Dễ dàng quản lý nhưng có thể gây lãng phí IP
+-	Chia subnet không cố định (VLSM - Variable Length Subnet Mask)
+  -	VLSM là phương pháp chia subnet với kích thước khác nhau để phù hợp với nhu cầu thực tế của từng bộ phận.
+  -	Không gian địa chỉ được tối ưu hơn so với FLSM
+  -	Mỗi subnet có một subnet mask khác nhau tùy thuộc vào số lượng thiết bị
+-	Chia subnet theo CIDR (Classless Inter-Domain Routing)
+  -	CIDR là phương pháp gộp nhiều subnet nhỏ thành một mạng lớn hơn hoặc ngược lại. CIDR không tuân theo các lớp địa chỉ IP truyền thống (A, B, C).
+  -	Giảm tải bảng định tuyến bằng cách gộp nhiều subnet lại (route aggregation).
+
 # Tài liệu tham khảo
 
 [Chương 1 - Địa chỉ IPv4, Chia subnet, VLSM, Summary - VnPro](https://vnpro.vn/thu-vien/chuong-1-dia-chi-ipv4-chia-subnet-vlsm-summary-4108.html)

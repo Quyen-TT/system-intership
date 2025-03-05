@@ -20,7 +20,7 @@ Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục,
 
 - Đảm bảo giao tiếp với môi trường truyền dẫn: Tầng vật lý xác định các đặc tính giao diện giữa các thiết bị mạng và môi trường truyền dẫn.
 
-- Biểu diễn dữ liệu dưới dạng bit: dữ liệu tầng vật lý là luồng bit liên tục 0 và 11. Để truyền đi, các bit phải được mã hóa thành các tín hiệu điện, quang hoặc tần số vô tuyến.
+- Biểu diễn dữ liệu dưới dạng bit: dữ liệu tầng vật lý là luồng bit liên tục 0 và 1. Để truyền đi, các bit phải được mã hóa thành các tín hiệu điện, quang hoặc tần số vô tuyến.
 
 - Tốc độ truyền dẫn: Qui định số lượng bit được gửi đi trong một đơn vị thời gian và khoảng thời gian để truyền đi một bit.
 
@@ -28,7 +28,7 @@ Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục,
 
 - Hình trạng vật lý: Hình trạng vật lý xác định cách nối các thiết bị với nhau để tạo thành mạng. Có ba hình trạng cơ bản: dạng bus, dạng vòng và dạng sao.
 
-- Chế độ truyền dẫn: Tầng vật lý cũng xác định hướng truyền dữ liệu giữa hai thiết bị: đơn công (simplex), bán song công (haif-duplex) hay song công (full-duplex). Trong chế độ đơn công, một thiết bị chỉ có thể gửi hoặc nhận dữ liệu. Chế độ đơn công là truyền thông một chiều. Trong chế độ bán song công, một thiết bị có thể gửi và nhận dữ liệu, nhưng không phải tại cùng một thời điểm. Trong chế độ song công, một thiết bị có thể nhận và gửi dữ liệu tại cùng một thời điểm. 
+- Chế độ truyền dẫn: Tầng vật lý cũng xác định hướng truyền dữ liệu giữa hai thiết bị: đơn công (simplex), bán song công (half-duplex) hay song công (full-duplex). Trong chế độ đơn công, một thiết bị chỉ có thể gửi hoặc nhận dữ liệu. Chế độ đơn công là truyền thông một chiều. Trong chế độ bán song công, một thiết bị có thể gửi và nhận dữ liệu, nhưng không phải tại cùng một thời điểm. Trong chế độ song công, một thiết bị có thể nhận và gửi dữ liệu tại cùng một thời điểm. 
 
 ### 2.2 Tầng liên kết dữ liệu (Data Link layer)
 
@@ -194,4 +194,4 @@ Bước 5: Lớp Session đảm bảo rằng các phiên giao tiếp vẫn đư�
 
 Bước 6: Lớp Presentation thực hiện giải mã (TLS/SSL), giải nén (ZIP, JPEG, MP3), hoặc chuyển đổi dữ liệu về định dạng phù hợp. Sau khi xử lý xong, dữ liệu được gửi lên lớp Application.
 
-Bước 7: Lớp Application nhận dữ liệu đã được xử lý hoàn chỉnh. Tại đây, Header cuối cùng được kiểm tra, chứa các tham số thỏa thuận giữa hai trình ứng dụng. Sau đó, dữ liệu gốc được hiển thị trên ứng dụng của người dùng, hoàn thành quá trình truyền dữ liệu.
+Bước 7: Lớp Application nhận dữ liệu đã được xử lý hoàn chỉnh. Sau đó, dữ liệu gốc được hiển thị trên ứng dụng của người dùng, hoàn thành quá trình truyền dữ liệu.
