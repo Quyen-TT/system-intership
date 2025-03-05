@@ -4,11 +4,11 @@
 
 TCP/IP (Transmission Control Protocol/Internet Protocol) là một bộ giao thức truyền thông xác định các tiêu chuẩn để truyền dữ liệu qua mạng máy tính, bao gồm cả internet. Giao thức TCP/IP là nền tảng của internet và cho phép các thiết bị giao tiếp với nhau bằng một ngôn ngữ chung.
 
-TCP/IP gồm 2 giao thức chính
+TCP/IP gồm 2 giao thức chính:
 
-- TCP: Có chức năng xác định các ứng dụng và tạo ra các kênh giao tiếp. TCP cũng có chức năng quản lý các thông tin khi được chia nhỏ để truyền tải qua internet. Giao thức này sẽ tập hợp các thông tin này theo đúng thứ tự, đảm bảo truyền tải thông tin chính xác tới địa chỉ đến.
+- TCP: Có chức năng quản lý các thông tin khi được chia nhỏ để truyền tải qua internet. Giao thức này sẽ tập hợp các thông tin này theo đúng thứ tự, đảm bảo truyền tải thông tin chính xác tới địa chỉ đến.
 
-- IP: Đảm bảo thông tin được truyền đến đúng địa chỉ. IP sẽ gán các địa chỉ và định tuyến từng gói thông tin. Mỗi mạng sẽ có 1 địa chỉ IP để xác định được chính xác nơi chuyển/nhận thông tin, dữ liệu.
+- IP: Đảm bảo thông tin được truyền đến đúng địa chỉ. IP sẽ gán các địa chỉ và định tuyến từng gói tin. Mỗi mạng sẽ có 1 địa chỉ IP để xác định được chính xác nơi chuyển/nhận thông tin, dữ liệu.
 
 ## 2. Cấu trúc mô hình TCP/IP
 
@@ -77,9 +77,11 @@ Tầng này cung cấp các giao thức ứng dụng như HTTP, SMTP, FTP, ..., 
 
 ## 4. Workflow với mô hình TCP/IP
 
+![OSI16](/QuyenNV/CCNA/OSI_TCP_IP/images/osi16.png)
+
 Bước 1: Ở tầng Application, bên A tạo ra dữ liệu, sau đó dữ liệu sẽ được chuyển xuống các tầng thấp hơn. Ở mỗi tầng, một header (và đôi khi là trailer) sẽ được bổ sung để giúp dữ liệu được truyền đi đúng cách.
 
-Bước 2: Tiếp theo, dữ liệu được chuyển xuống tầng Transport, tại đây dữ liệu có thể bị chia nhỏ thành các segment. Ở tầng này có 2 giao thức là TCP và UDP. gói tin sẽ sử dụng 1 trong 2 giao thức này: **Nếu là giao thức TCP:**
+Bước 2: Tiếp theo, dữ liệu được chuyển xuống tầng Transport, tại đây dữ liệu có thể bị chia nhỏ thành các segment. Ở tầng này có 2 giao thức là TCP và UDP, gói tin sẽ sử dụng 1 trong 2 giao thức này: **Nếu là giao thức TCP:**
 
 ***Thiết lập kết nối: Bắt tay 3 bước***
 
@@ -113,7 +115,7 @@ Khi quá trình truyền tải hoàn tất, hai thiết bị có thể đóng k�
 
 Bước 3: Dữ liệu tiếp tục được chuyển xuống tầng Network, tại đây mỗi Segment được đóng gói thành một Packet Header IP sẽ được thêm vào Packet, bao gồm địa chỉ IP nguồn và IP đích. Sau đó, thiết bị thực hiện tìm next-hop (router tiếp theo) để định tuyến gói tin đi đúng hướng.
 
-Bước 4: Ở tầng network access, tầng này chính là tầng datalink và tầng physical ở mô hình osi.
+Bước 4: Ở tầng network access, tầng này chính là tầng datalink và tầng physical ở mô hình OSI.
 
 Dữ liệu tiếp tục được chuyển xuống tầng Data Link. tại đây Packet sẽ được đóng gói thành Frame bằng cách thêm địa chỉ MAC nguồn (MAC của thiết bị hiện tại) và địa chỉ MAC đích (MAC của router tiếp theo). Đồng thời, Trailer (FCS - Frame Check Sequence) được thêm vào để kiểm tra lỗi trong quá trình truyền.
 
