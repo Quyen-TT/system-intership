@@ -204,7 +204,9 @@ vậy, khi khai báo một địa chỉ IP luôn phải khai báo kèm theo mộ
 
     -	Việc tổ chức mạng thành nhiều subnet giúp quản trị viên dễ dàng kiểm soát và giám sát lưu lượng mạng.
     -	Dễ dàng xác định các sự cố mạng và khoanh vùng lỗi nhanh hơn.
+
 ## 9.2 Các kiểu chia subnet
+
 -	Chia subnet cố định (FLSM - Fixed Length Subnet Mask)
 
     -	Trong FLSM, tất cả các subnet có cùng kích thước, sử dụng cùng một subnet mask, và mỗi subnet có số lượng host như nhau.

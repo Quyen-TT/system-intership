@@ -18,8 +18,6 @@ Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục,
 
 **Chức năng của tầng vật lý**
 
-- Đảm bảo giao tiếp với môi trường truyền dẫn: Tầng vật lý xác định các đặc tính giao diện giữa các thiết bị mạng và môi trường truyền dẫn.
-
 - Biểu diễn dữ liệu dưới dạng bit: dữ liệu tầng vật lý là luồng bit liên tục 0 và 1. Để truyền đi, các bit phải được mã hóa thành các tín hiệu điện, quang hoặc tần số vô tuyến.
 
 - Tốc độ truyền dẫn: Qui định số lượng bit được gửi đi trong một đơn vị thời gian và khoảng thời gian để truyền đi một bit.
@@ -64,7 +62,7 @@ Các giao thức phổ biến: IP (Internet Protocol), ICMP (Internet Control Me
 
 **Chức năng của tầng mạng**
 
-- Định tuyến (Routing): Quyết định đường đi tối ưu cho các gói dữ liệu từ nguồn đến đích, dựa trên các giao thức định tuyến như RIP, OSPF, BGP.
+- Định tuyến (Routing): Quyết định đường đi tối ưu cho các gói dữ liệu từ nguồn đến đích.
 
 - Địa chỉ hóa (Addressing): Sử dụng địa chỉ logic (ví dụ: IP) để định danh các thiết bị trong mạng.
 
