@@ -138,9 +138,7 @@ Cấu trúc Header ISL (30 byte):
 
 - Chỉ cần một đường vật lý cho cả hai VLAN giữa hai Switch.
 
-### 2.5. VTP và STP
-
-#### 2.5.1. VTP (Vlan Trunking Protocol) 
+### 2.5. VTP (Vlan Trunking Protocol) 
 
 VTP (Vlan Trunking Protocol) là giao thức hoạt động ở tầng liên kết dữ liệu trong mô hình OSI. VTP giúp cho việc cấu hình VLAN luôn đồng nhất khi thêm, xóa, sửa thông tin về VLAN trong hệ thống mạng.
 
@@ -192,69 +190,6 @@ Transparent Mode:
 
 - Có thể tạo VLAN cục bộ nhưng không chia sẻ với switch khác.
 
-#### 2.5.2. STP (Spanning Tree Protocol)
-
-STP (Spanning Tree Protocol) là một giao thức lớp 2 (Layer 2) trong mô hình OSI, giúp ngăn chặn vòng lặp trong mạng Ethernet khi có nhiều đường kết nối dự phòng giữa các switch.
-
-STP tránh các vấn đề nghiệm trọng từ vòng lặp như:
-
-- Broadcast storm: Các gói tin broadcast được sao chép và lan truyền liên tục trong mạng, gây nghẽn mạng.
-
-- Duplicate frames: Các thiết bị nhận được nhiều bản sao của cùng một gói tin, gây nhầm lẫn và xử lý sai.
-
-- MAC address table instability: Bảng địa chỉ MAC trên switch bị cập nhật liên tục, gây khó khăn cho việc chuyển tiếp gói tin.  
-
-![vlan13](/QuyenNV/CCNA/VLAN_Trunking/images/vlan13.png)
-
-**Cách hoạt động của STP**  
-
-Giao thức STP sử dụng thuật toán Spanning Tree Algorithm (STA) để tìm ra cấu trúc mạng không có vòng lặp bằng cách vô hiệu hóa (blocking) các cổng dư thừa.  
-
-**Bước 1:** Chọn Root Bridge
-
-- Root Bridge là switch trung tâm được STP chọn làm gốc của cây spanning tree.  
-
-- Switch nào có Bridge ID (BID) nhỏ nhất sẽ trở thành Root Bridge.  
-
-  - **Bridge ID** = **Bridge Priority (mặc định là 32768) + MAC Address**  
-
-- Nếu hai switch có Bridge Priority bằng nhau, STP sẽ chọn switch có MAC Address nhỏ hơn.  
-
-**Bước 2:** Xác định Root Port trên mỗi switch  
-
-- Root Port là cổng trên switch có đường đi ngắn nhất đến Root Bridge.  
-
-- Đường đi được tính dựa trên Path Cost (chi phí đường đi), theo bảng sau:  
-
-| Tốc độ liên kết | Path Cost (STP 802.1D) | Path Cost (RSTP 802.1w) |
-|---------------|-----------------|-----------------|
-| 10 Mbps       | 100             | 2,000,000       |
-| 100 Mbps      | 19              | 200,000         |
-| 1 Gbps        | 4               | 20,000          |
-| 10 Gbps       | 2               | 2,000           |
-
-**Bước 3:** Xác định Designated Port 
-
-- Designated Port là cổng được chọn để chuyển tiếp dữ liệu trên một segment mạng.  
-
-- Trong mỗi segment, switch nào có đường đi tốt nhất đến Root Bridge sẽ giữ Designated Port ở trạng thái Forwarding.  
-
-**Bước 4:** Chặn các cổng không cần thiết để loại bỏ vòng lặp 
-
-- Các cổng không phải Root Port hay Designated Port sẽ được đặt ở trạng thái Blocking để ngăn vòng lặp.  
-
-**Các trạng thái cổng trong STP**  
-
-Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào **Forwarding** hoặc **Blocking**:  
-
-| Trạng thái | Chức năng |
-|-----------|-----------|
-| **Blocking** | Không chuyển tiếp dữ liệu, chỉ lắng nghe BPDU để tránh vòng lặp. |
-| **Listening** | Bắt đầu tham gia STP, lắng nghe BPDU nhưng chưa học địa chỉ MAC. |
-| **Learning** | Học địa chỉ MAC nhưng vẫn chưa chuyển tiếp dữ liệu. |
-| **Forwarding** | Chuyển tiếp dữ liệu bình thường. |
-| **Disabled** | Cổng bị vô hiệu hóa do lỗi hoặc bị tắt bởi quản trị viên. |
-
 ## 3. Một số thiết bị khác
 
 ### 3.1 Router (Bộ định tuyến)
@@ -279,7 +214,7 @@ Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào 
 
   - ACLs (Access Control Lists): Kiểm soát lưu lượng và bảo mật
 
-#### 3.1.2. Cách hoạt động**
+#### 3.1.2. Cách hoạt động
 
 - Khi nhận được gói tin, router sẽ kiểm tra địa chỉ IP đích.
 
