@@ -207,6 +207,7 @@ STP tránh các vấn đề nghiệm trọng từ vòng lặp như:
 ![vlan13](/QuyenNV/CCNA/VLAN_Trunking/images/vlan13.png)
 
 **Cách hoạt động của STP**  
+
 Giao thức STP sử dụng thuật toán Spanning Tree Algorithm (STA) để tìm ra cấu trúc mạng không có vòng lặp bằng cách vô hiệu hóa (blocking) các cổng dư thừa.  
 
 **Bước 1:** Chọn Root Bridge
@@ -243,6 +244,7 @@ Giao thức STP sử dụng thuật toán Spanning Tree Algorithm (STA) để t�
 - Các cổng không phải Root Port hay Designated Port sẽ được đặt ở trạng thái Blocking để ngăn vòng lặp.  
 
 **Các trạng thái cổng trong STP**  
+
 Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào **Forwarding** hoặc **Blocking**:  
 
 | Trạng thái | Chức năng |
@@ -256,6 +258,8 @@ Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào 
 ## 3. Một số thiết bị khác
 
 ### 3.1 Router (Bộ định tuyến)
+
+![vlan14](/QuyenNV/CCNA/VLAN_Trunking/images/vlan14.png)
 
 #### 3.1.1. Khái niệm
 
@@ -309,6 +313,8 @@ Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào 
 
 #### 3.2.1. Switch Layer 2 (L2)
 
+![vlan15](/QuyenNV/CCNA/VLAN_Trunking/images/vlan15.png)
+
 - Switch L2 hoạt động ở Layer 2 (Data Link Layer).
 
 - Chuyển tiếp gói tin dựa trên địa chỉ MAC.
@@ -342,6 +348,8 @@ Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào 
 - Không hỗ trợ IP hoặc định tuyến.
 
 #### 3.2.2. Switch Layer 3 (L3)
+
+![vlan16](/QuyenNV/CCNA/VLAN_Trunking/images/vlan16.png)
 
 - Switch L3 có thể hoạt động ở cả Layer 2 và Layer 3.
 
@@ -416,6 +424,9 @@ Mỗi cổng trong STP sẽ trải qua các trạng thái sau trước khi vào 
 - Giảm hiệu suất mạng nếu xử lý quá nhiều gói tin.
 
 ### 3.4. Hub
+
+![vlan17](/QuyenNV/CCNA/VLAN_Trunking/images/vlan17.png)
+
 #### 3.4.1. Khái niệm
 
 - Hub hoạt động ở Layer 1 (Physical Layer).
