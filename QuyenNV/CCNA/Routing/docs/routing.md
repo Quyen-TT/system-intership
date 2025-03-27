@@ -142,6 +142,8 @@ External BGP là phần mở rộng của BGP. eBGP được sử dụng để t
 
 **c, Cơ chế hoạt động**
 
+![anh11](/QuyenNV/CCNA/Routing/images/anh11.png) 
+
 **Bước 1:** Thiết lập kết nối Neighbor (Peer)
 
 - Hai router chạy BGP được gọi là BGP peers.
@@ -177,9 +179,3 @@ External BGP là phần mở rộng của BGP. eBGP được sử dụng để t
 - BGP peers thường xuyên trao đổi các thông điệp keepalive để duy trì kết nối.
 
 - Thông điệp update được sử dụng để thông báo về sự thay đổi trong mạng, ví dụ như khi có một đường dẫn mới hoặc một đường dẫn cũ không còn khả dụng.
-
-**c, Các loại BGP** 
-
-Các thiết bị hoặc mạng lân cận trong cùng một AS có thể sử dụng Internal BGP để định tuyến qua các mạng nội bộ. iBGP không giao tiếp với các AS khác vì quy trình chỉ xảy ra giữa hai đối tác peering nội bộ. 
-
-External BGP là phần mở rộng của BGP. eBGP được sử dụng để truyền thông tin trao đổi giữa các hệ thống tự trị riêng biệt. Sử dụng eBGP KHÔNG yêu cầu cần sử dụng iBGP.
