@@ -66,6 +66,8 @@ Giao thức định tuyến động được chia thành hai nhóm chính:
 
 - EGP (Exterior Gateway Protocol - Giao thức định tuyến liên mạng): Dùng để trao đổi thông tin giữa các hệ thống tự trị khác nhau (AS khác nhau), chủ yếu trên Internet.
 
+![anh12](/QuyenNV/CCNA/Routing/images/anh12.png)
+
 ### 2.1 RIP (Routing Information Protocol)
 
 **a, RIP là gì?** 
