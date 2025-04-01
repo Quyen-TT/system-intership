@@ -38,7 +38,7 @@ Virtual Ethernet adapter trên VM và Host Ethernet adapter sẽ cùng kết n�
 
 **Địa chỉ IP máy Centos:**
 
-![anh5](/QuyenNV/VMWare/images/anh5.png)
+![anh13](/QuyenNV/VMWare/images/anh13.png)
 
 **Địa chỉ IP máy Ubuntu:**
 
