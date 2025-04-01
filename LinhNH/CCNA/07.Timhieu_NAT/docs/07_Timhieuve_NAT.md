@@ -26,7 +26,6 @@ Lợi ích:
 ### 2.1 Static NAT
 ![hinhanh2.1](/LinhNH/07.Timhieu_NAT/images/static.png)  
 
-
 Đây là loại NAT cơ bản nhất và thường được sử dụng để chuyển đổi một địa chỉ IP private trong mạng cục bộ sang một địa chỉ IP public. Trong quá trình chuyển đổi, một địa chỉ IP private được ánh xạ với một địa chỉ IP public, giúp thiết lập kết nối đến những thiết bị trong mạng cục bộ từ bên ngoài mạng. (ánh xạ  1:1)
 
 => one to one
@@ -39,6 +38,7 @@ Lợi ích:
 => one to one 
 
 ### 2.3 PAT
+
 Nhiều địa chỉ truy cập cùng 1 địa chỉ từ bên ngoài có sử dụng thêm Port
 
 ![hinhanh2.3](/LinhNH/07.Timhieu_NAT/images/overloading.png)  

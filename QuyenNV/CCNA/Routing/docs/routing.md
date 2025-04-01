@@ -38,7 +38,7 @@ Kỹ thuật định tuyến tĩnh đơn giản, dễ thực hiện, ít hao t�
 
     - Phải cấu hình thủ công khi mạng có sự thay đổi.
 
-    - Phù hợp với mạng nhỏ, rất khó triển khai trên mạng lớn
+    - Phù hợp với mạng nhỏ, rất khó triển khai trên mạng lớn.
 
 #### 1.2.2 Định tuyến động 
 
