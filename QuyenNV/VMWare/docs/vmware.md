@@ -113,10 +113,10 @@ Public. Điều này quá tốn kém, giải pháp NAT động cho phép chỉ c
 
 **Để cài đặt IP tĩnh, sử dụng các câu lệnh:**
 
-    nmcli con mod ens33 ipv4.addresses 192.168.91.101/24
-    nmcli con mod ens33 ipv4.gateway 192.168.91.1
-    nmcli con mod ens33 ipv4.dns 8.8.8.8
-    nmcli con mod ens33 ipv4.method manual
+    nmcli con mod ens160 ipv4.addresses 192.168.91.101/24
+    nmcli con mod ens160 ipv4.gateway 192.168.91.1
+    nmcli con mod ens160 ipv4.dns 8.8.8.8
+    nmcli con mod ens160 ipv4.method manual
 
 **Sử dụng câu lệnh dưới đây để áp dụng:** 
 
