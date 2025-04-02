@@ -32,7 +32,7 @@ Bước 4: Thiết lập dung lượng, cách lưu cho ổ cứng ảo.
 
 ![vm4](/QuyenNV/VMWare/images/vm4.png)
 
-Bước 6: Bấm Finish, VMware sẽ tự động khởi chạy máy ảo.
+Bước 5: Bấm Finish, VMware sẽ tự động khởi chạy máy ảo.
 
 ## 3. Các chế độ network trong VMware
 
