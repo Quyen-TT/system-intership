@@ -2,7 +2,37 @@
 
 ## 1. Cài đặt VMware
 
+Truy cập trang web chính thức của hãng để tải.
+
+[VMWare](https://vmware.com/in.html)
+
 ## 2. Tạo máy ảo trên VMware
+
+### 2.1 Chuẩn bị
+
+Cài đặt thành công VMWare
+
+Cài đặt file iso CentOS Stream 9, Ubuntu 24.04, Windows 2025 Server 
+
+### 2.2 Tạo máy ảo
+
+Bước 1: Tại cửa sổ chính của VMware, chọn Create a New Virtual Machine để tiến hành tạo máy ảo mới.
+
+![vm1](/QuyenNV/VMWare/images/vm.png)
+
+Bước 2: Chọn Installer disc image file (iso) và bấm vào Browse để chọn file iso.
+
+![vm2](/QuyenNV/VMWare/images/vm2.png)
+
+Bước 3: khai báo ổ cứng ảo, điền tên, chọn thư mục lưu.
+
+![vm3](/QuyenNV/VMWare/images/vm3.png)
+
+Bước 4: Thiết lập dung lượng, cách lưu cho ổ cứng ảo.
+
+![vm4](/QuyenNV/VMWare/images/vm4.png)
+
+Bước 6: Bấm Finish, VMware sẽ tự động khởi chạy máy ảo.
 
 ## 3. Các chế độ network trong VMware
 
