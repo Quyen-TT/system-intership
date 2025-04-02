@@ -124,7 +124,7 @@ Public. Điều này quá tốn kém, giải pháp NAT động cho phép chỉ c
 
 **Địa chỉ IP Centos sau khi cấu hình IP tĩnh:**
 
-![anh19](/QuyenNV/VMWare/images/anh19.png)
+![anh19](/QuyenNV/VMWare/images/anh18.png)
 
 
 
