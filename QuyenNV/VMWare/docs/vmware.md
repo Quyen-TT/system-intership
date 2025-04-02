@@ -8,7 +8,7 @@
 
 ### 3.1 Chế độ Bridge
 
-Virtual Ethernet adapter trên VM sẽ kết nối đến VMnet0 switch và thông qua Virtual bridge để kết nối đến Host Ethernet adapter. Vậy nên trong trường hợp này bạn sẽ không thấy có VMnet Card nào được tạo thêm. Lúc này VM và Host sẽ cùng chung đường mạng và VM có thể nhận IP tự động từ DHCP server hoặc thiết lập thủ công. Như vậy trên đường mạng này, tương tác của máy ảo và các thành phần khác sẽ có tính 2 chiều giống như Host.
+Virtual Ethernet adapter trên VM sẽ kết nối đến VMnet0 switch và thông qua Virtual bridge để kết nối đến Host Ethernet adapter. Vậy nên trong trường hợp này sẽ không có VMnet Card nào được tạo thêm. Lúc này VM và Host sẽ cùng chung đường mạng và VM có thể nhận IP tự động từ DHCP server hoặc thiết lập thủ công. Như vậy trên đường mạng này, tương tác của máy ảo và các thành phần khác sẽ có tính 2 chiều giống như Host.
 
 ![anh1](/QuyenNV/VMWare/images/anh1.png)
 
@@ -28,39 +28,39 @@ Virtual Ethernet adapter trên VM và Host Ethernet adapter sẽ cùng kết n�
 
 **Địa chỉ IP máy Ubuntu:**
 
-![anh11](/QuyenNV/VMWare/images/anh11.png)
+![anh4](/QuyenNV/VMWare/images/anh11.png)
 
 **Ping từ máy ảo đến google.com:**
 
-![anh12](/QuyenNV/VMWare/images/anh12.png)
+![anh5](/QuyenNV/VMWare/images/anh12.png)
 
 ## 5. Sử dụng chế độ card Host-only để 2 máy ảo kết nối với nhau
 
 **Địa chỉ IP máy Centos:**
 
-![anh13](/QuyenNV/VMWare/images/anh13.png)
+![anh6](/QuyenNV/VMWare/images/anh13.png)
 
 **Địa chỉ IP máy Ubuntu:**
 
-![anh6](/QuyenNV/VMWare/images/anh6.png)
+![anh7](/QuyenNV/VMWare/images/anh6.png)
 
 **Ping giữa 2 máy:**
 
-![anh7](/QuyenNV/VMWare/images/anh7.png)
+![anh8](/QuyenNV/VMWare/images/anh7.png)
 
 ## 6. Sử dụng 1 card Bridge để từ máy ảo ping ra máy laptop cá nhân
 
 **Địa chỉ IP máy laptop:**
 
-![anh8](/QuyenNV/VMWare/images/anh8.png)
+![anh9](/QuyenNV/VMWare/images/anh8.png)
 
 **Địa chỉ IP máy Ubuntu:**
 
-![anh9](/QuyenNV/VMWare/images/anh9.png)
+![anh10](/QuyenNV/VMWare/images/anh9.png)
 
 **Ping giữa 2 máy:**
 
-![anh10](/QuyenNV/VMWare/images/anh10.png)
+![anh11](/QuyenNV/VMWare/images/anh10.png)
 
 ## 7. SNAT và DNAT
 
@@ -70,7 +70,7 @@ SNat tĩnh hay còn gọi là Static NAT là phương thức NAT một đổi m�
 
 Phương án này có nhược điểm là nếu trong LAN có bao nhiêu IP muốn đi ra Internet thì ta phải có từng đó IP Public để ánh xạ. Do vậy phương án NAT tĩnh chỉ được đúng với các máy chủ với nhiệm vụ Public các Server này lên Internet.
 
-![anh4](/QuyenNV/VMWare/images/anh4.png)
+![anh12](/QuyenNV/VMWare/images/anh4.png)
 
 ### 7.2 DNAT
 
@@ -79,4 +79,52 @@ Nat động (Dynamic NAT) là một giải pháp tiết kiệm IP Public cho NAT
 Ví dụ: Hệ thống LAN trong công ty có 100 IP, nếu muốn 100 IP này truy cập Internet thì theo phương án NAT tĩnh công ty sẽ phải thuê từ ISP 100 IP 
 Public. Điều này quá tốn kém, giải pháp NAT động cho phép chỉ cần thuê từ ISP 10 IP Public nếu tại cùng một thời điểm chỉ có 10 IP trong LAN truy cập Internet. Tuy nhiên giải pháp NAT động vẫn có hạn chế vì nếu tại một thời điểm công ty cần 20 IP trong LAN truy cập Internet thì mười IP truy cập sau sẽ phải đợi đến khi nào có IP rỗi (các IP trước không chiếm dụng IP Public nữa) thì mới có thể truy cập Internet được. Chính vì thế giải pháp NAT động ít khi được sử dụng.
 
-![anh5](/QuyenNV/VMWare/images/anh5.png)
+![anh13](/QuyenNV/VMWare/images/anh5.png)
+
+## 8. Cài đặt địa chỉ IP tĩnh cho Linux
+
+### Trên Ubuntu:
+
+**Địa chỉ IP ban đầu trên Ubuntu:**
+
+![anh14](/QuyenNV/VMWare/images/anh11.png)
+
+**Để cài đặt IP tĩnh, chỉnh sửa file .yaml trong thư mục /etc/netplan**
+
+![anh15](/QuyenNV/VMWare/images/anh14.png)
+
+    sudo nano /etc/netplan/01-netcfg.yaml
+
+![anh16](/QuyenNV/VMWare/images/anh15.png)
+
+**Chạy lệnh netplan apply để áp dụng:** 
+
+    sudo netplan apply
+
+**Địa chỉ IP Ubuntu sau khi cấu hình IP tĩnh:**
+
+![anh17](/QuyenNV/VMWare/images/anh16.png)
+
+### Trên Centos:
+
+**Địa chỉ IP ban đầu trên Centos:**
+
+![anh18](/QuyenNV/VMWare/images/anh18.png)
+
+**Để cài đặt IP tĩnh, sử dụng các câu lệnh:**
+
+    nmcli con mod ens33 ipv4.addresses 192.168.91.101/24
+    nmcli con mod ens33 ipv4.gateway 192.168.91.1
+    nmcli con mod ens33 ipv4.dns 8.8.8.8
+    nmcli con mod ens33 ipv4.method manual
+
+**Sử dụng câu lệnh dưới đây để áp dụng:** 
+
+    nmcli con up ens160
+
+**Địa chỉ IP Centos sau khi cấu hình IP tĩnh:**
+
+![anh19](/QuyenNV/VMWare/images/anh19.png)
+
+
+
