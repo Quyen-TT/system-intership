@@ -32,7 +32,7 @@ Vì vậy, IPv5 không bao giờ trở thành tiêu chuẩn chính thức và b�
 
 Địa chỉ IPv4 gồm 32 bit nhị phân, chia thành 4 cụm 8 bit (gọi là các octet). Các octet được biểu diễn dưới dạng thập phân và được ngăn cách nhau bằng các dấu chấm.
 
-![Hình 1](/QuyenNV/CCNA/IPv4/images/anh1.png)
+![Hình 1](/QuyenNV/1.CCNA/IPv4/images/anh1.png)
 
 Các quy tắc đặt địa chỉ IP:
 
@@ -57,7 +57,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
 
 Địa chỉ IP được chia thành 5 lớp A, B, C, D và E.
 
-![Hình 2](/QuyenNV/CCNA/IPv4/images/anh2.png)
+![Hình 2](/QuyenNV/1.CCNA/IPv4/images/anh2.png)
 
 - Lớp A:  
   - Địa chỉ lớp A sử dụng một octet đầu làm phần mạng, ba octet sau làm phần host.
@@ -66,7 +66,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Địa chỉ 127.0.0.1 là địa chỉ loopback trên các host nên địa chỉ mạng lớp A sử dụng được gồm 1.0.0.0 à 126.0.0.0 (126 mạng).
   - Phần host có 24 bit => mỗi mạng lớp A có (2^24 – 2) host.
 
-![Hình 3](/QuyenNV/CCNA/IPv4/images/anh3.png)
+![Hình 3](/QuyenNV/1.CCNA/IPv4/images/anh3.png)
 
 - Lớp B: 
   - Địa chỉ lớp B sử dụng 2 octet đầu làm phần mạng, 2 octet sau làm phần host. 
@@ -75,7 +75,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Có tất cả 2^14 mạng trong lớp B.
   - Phần host: 16 bit => Một mạng lớp B có 2^16 – 2 host.
 
-![Hình 4](/QuyenNV/CCNA/IPv4/images/anh4.png)
+![Hình 4](/QuyenNV/1.CCNA/IPv4/images/anh4.png)
 
 - Lớp C:
   - Địa chỉ lớp C sử dụng ba octet đầu làm phần mạng, một octet sau làm phần host.
@@ -84,7 +84,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
   - Có tất cả 2^21 mạng trong lớp C.
   -   Phần host: 8 bit => Một mạng lớp C có 2^8 – 2 = 254 host.
 
-![Hình 5](/QuyenNV/CCNA/IPv4/images/anh5.png)
+![Hình 5](/QuyenNV/1.CCNA/IPv4/images/anh5.png)
 
 - Lớp D:
   - Bao gồm các địa chỉ trong dải: 224.0.0.0 -> 239.255.255.255
@@ -154,7 +154,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
 
 - Local Broadcast: Gửi đến tất cả thiết bị trong mạng hiện tại. Ví dụ: 255.255.255.255.
 
-![Hình 7](/QuyenNV/CCNA/IPv4/images/anh7.png)
+![Hình 7](/QuyenNV/1.CCNA/IPv4/images/anh7.png)
 
 ### 7.2 Địa chỉ Multicast
 
@@ -162,8 +162,7 @@ VD: địa chỉ 192.168.1.255 là một địa chỉ broadcast cho mạng 192.1
 
 Địa chỉ Multicast sử dụng dải địa chỉ IP từ 224.0.0.0 đến 239.255.255.255
 
-![Hình 6](/QuyenNV/CCNA/IPv4/images/anh6.png)
-
+![Hình 6](/QuyenNV/1.CCNA/IPv4/images/anh6.png)
 
 ## 8. Subnet, subnet mask, prefix
 
@@ -171,7 +170,7 @@ Subnet (mạng con) là một phần của một mạng lớn hơn, giúp chia n
 
 Subnet mask là một dải 32 bit nhị phân đi kèm với một địa chỉ IP, được các host sử dụng để xác định địa chỉ mạng của địa chỉ IP này. Để làm được điều đó, host sẽ đem địa chỉ IP thực hiện phép tính AND từng bit một của địa chỉ với subnet mask của nó, kết quả host sẽ thu được địa chỉ mạng tương ứng của địa chỉ IP.
 
-![Hình 9](/QuyenNV/CCNA/IPv4/images/anh9.png)
+![Hình 9](/QuyenNV/1.CCNA/IPv4/images/anh9.png)
 
 Số prefix: Subnet mask được sử dụng kèm với địa chỉ IP để một host có thể căn cứ vào đó xác dịnh được địa chỉ mạng tương ứng của địa chỉ này. Vì
 vậy, khi khai báo một địa chỉ IP luôn phải khai báo kèm theo một subnet mask. Tuy nhiên, subnet mask dù đã được viết dưới dạng số thập phân vẫn khá dài dòng nên để mô tả một địa chỉ IP một cách ngắn gọn hơn, người ta dùng một đại lượng được gọi là số prefix. Số prefix có thể hiểu một cách đơn giản là số bit mạng trong một địa chỉ IP, được viết ngay sau địa chỉ IP, và được ngăn cách với địa chỉ này bằng một dấu “/”.
@@ -180,7 +179,7 @@ vậy, khi khai báo một địa chỉ IP luôn phải khai báo kèm theo mộ
 
 **Nguyên lý cơ bản của kỹ thuật chia subnet:** Để có thể chia nhỏ một mạng lớn thành nhiều mạng con bằng nhau, người ta thực hiện mượn thêm một số bit bên phần host để làm phần mạng, các bit mượn này được gọi là các bit subnet. Tùy thuộc vào số bit subnet mà ta có được các số lượng các mạng con khác nhau với các kích cỡ khác nhau:
 
-![Hình 8](/QuyenNV/CCNA/IPv4/images/anh8.png)
+![Hình 8](/QuyenNV/1.CCNA/IPv4/images/anh8.png)
 
 ## 9.1 Tại sao cần phải chia subnet?
 -	Tiết kiệm địa chỉ IP
