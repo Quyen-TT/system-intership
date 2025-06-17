@@ -1,6 +1,6 @@
 # Cấu hình chia VLAN trên Switch
 
-![lab1](/QuyenNV/CCNA/VLAN_Trunking/images/lab1.png)
+![lab1](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab1.png)
 
 ## Các bước thực hiện
 
@@ -29,7 +29,7 @@ Switch(config-vlan)#name VLAN12
 
 - Kiểm tra lại VLAN vừa tạo:
 
-![lab2](/QuyenNV/CCNA/VLAN_Trunking/images/lab2.png)
+![lab2](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab2.png)
 
 ### 2. Gán các port vào VLAN đã định trước
 
@@ -70,7 +70,7 @@ Kiểm tra các port gán đúng vlan chưa:
 
     Switch#show vlan
 
-![lab3](/QuyenNV/CCNA/VLAN_Trunking/images/lab3.png)
+![lab3](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab3.png)
 
 ### 3. Ping giữa các máy 
 
@@ -80,28 +80,28 @@ Chọn PC1 -> Desktop -> Command Prompt
 
 Tiến hành ping giữa các máy:
 
-![lab4](/QuyenNV/CCNA/VLAN_Trunking/images/lab4.png)
+![lab4](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab4.png)
 
 Làm tương tự với các PC khác: 
 
-![lab5](/QuyenNV/CCNA/VLAN_Trunking/images/lab5.png)
+![lab5](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab5.png)
 
 # Cấu hình VTP domain
 
 **Sơ đồ lab:**
 
-![lab6](/QuyenNV/CCNA/VLAN_Trunking/images/lab6.png)
+![lab6](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab6.png)
 
 **Quy hoạch VLAN:**
 
 VLAN10 : 192.168.10.0/24  
 VLAN20 : 192.168.20.0/24
 
-![lab7](/QuyenNV/CCNA/VLAN_Trunking/images/lab7.png)
+![lab7](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab7.png)
 
 **Quy hoạch IP và kết nối:**
 
-![lab8](/QuyenNV/CCNA/VLAN_Trunking/images/lab8.png)
+![lab8](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab8.png)
 
 ## Các bước thực hiện 
 
@@ -152,7 +152,7 @@ Kiểm tra lại:
 
     SW1#show vlan
 
-![lab9](/QuyenNV/CCNA/VLAN_Trunking/images/lab9.png)
+![lab9](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab9.png)
 
 **Trên SW2**
 
@@ -191,7 +191,7 @@ Kiểm tra lại:
 
     SW2#show vlan
 
-![lab10](/QuyenNV/CCNA/VLAN_Trunking/images/lab10.png)
+![lab10](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab10.png)
 
 ### 3. Cấu hình VTP
 
@@ -291,24 +291,24 @@ Ta sẽ bật trunking trên các port nối giữa 2 switch là Fa0/1 trên SW1
 
     SW# show vtp status
 
-![lab11](/QuyenNV/CCNA/VLAN_Trunking/images/lab11.png)
+![lab11](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab11.png)
 
-![lab12](/QuyenNV/CCNA/VLAN_Trunking/images/lab12.png)
+![lab12](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab12.png)
 
     SW# show vtp pasword
 
-![lab13](/QuyenNV/CCNA/VLAN_Trunking/images/lab13.png)
+![lab13](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab13.png)
 
-![lab14](/QuyenNV/CCNA/VLAN_Trunking/images/lab14.png)
+![lab14](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab14.png)
 
     SW# show vlan
 
-![lab15](/QuyenNV/CCNA/VLAN_Trunking/images/lab15.png)
+![lab15](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab15.png)
 
-![lab16](/QuyenNV/CCNA/VLAN_Trunking/images/lab16.png)
+![lab16](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab16.png)
 
     SW# show interfaces trunk
 
-![lab17](/QuyenNV/CCNA/VLAN_Trunking/images/lab17.png)
+![lab17](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab17.png)
 
-![lab18](/QuyenNV/CCNA/VLAN_Trunking/images/lab18.png)
+![lab18](/QuyenNV/1.CCNA/VLAN_Trunking/images/lab18.png)
