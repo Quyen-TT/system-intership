@@ -8,7 +8,7 @@ VLAN (Virtual Local Area Network) hay còn gọi là mạng LAN ảo là một k
   
 Mỗi VLAN hoạt động như một mạng LAN riêng biệt, với lưu lượng truy cập riêng biệt và được cách ly với các VLAN khác.
 
-![vlan1](/QuyenNV/CCNA/VLAN_Trunking/images/vlan1.png)
+![vlan1](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan1.png)
 
 ### 1.2. Phân loại VLAN
 
@@ -26,7 +26,7 @@ Tương tự như mô hình thiết bị mạng, Dynamic VLAN hoạt động tru
 
 ### 1.3. Cách hoạt động VLAN 
 
-![vlan5](/QuyenNV/CCNA/VLAN_Trunking/images/vlan5.png)
+![vlan5](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan5.png)
 
 Một VLAN được xác định trên các switch bằng một ID VLAN. Mỗi cổng trên một switch sẽ được gán cho một hoặc nhiều VLAN ID, trường hợp không được chỉ định thì nó sẽ được chuyển tới một VLAN mặc định. Mỗi VLAN sẽ cung cấp quyền truy cập dữ liệu cho tất cả những thiết bị kết nối với cổng trên switch phù hợp với VLAN ID của nó.
 
@@ -44,7 +44,7 @@ Spanning Tree Protocol (STP) là một giao thức được dùng để ngăn ch
 
 Đường Trunk hay Trunking là một kỹ thuật kết nối các thiết bị mạng với nhau để tạo thành một mạng lớn hơn, đặc biệt trong các mạng LAN (Local Area Network) hoặc các mạng VLAN (Virtual Local Area Network). Đường trunk cho phép chuyển gói dữ liệu từ một VLAN này sang một VLAN khác trên cùng một đường truyền vật lý, điều này giúp tối ưu hóa việc sử dụng băng thông và giảm độ trễ trong mạng.
  
-![vlan6](/QuyenNV/CCNA/VLAN_Trunking/images/vlan6.png)
+![vlan6](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan6.png)
 
 Khi một cổng được cấu hình trunk, dữ liệu từ nhiều VLAN sẽ truyền qua cùng một đường truyền. Để phân biệt gói tin thuộc VLAN nào, người ta sử dụng các giao thức gắn thẻ (tagging). Có 2 chuẩn phổ biến là IEEE 802.1Q (DOT1Q) và ISL
 
@@ -54,7 +54,7 @@ IEEE 802.1Q (hay DOT1Q) là tiêu chuẩn VLAN trunking do IEEE phát triển. N
 
 Gói tin VLAN khi đi qua cổng trunk sẽ được gắn thẻ VLAN (VLAN Tagging) theo chuẩn 802.1Q.
 
-![vlan7](/QuyenNV/CCNA/VLAN_Trunking/images/vlan7.png)
+![vlan7](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan7.png)
 
 **Cấu trúc thẻ VLAN 802.1Q (4-byte tag field)**
 
@@ -78,7 +78,7 @@ ISL (Inter-Switch Link) là giao thức trunking độc quyền của Cisco, đ�
 
 - ISL hỗ trợ tối đa 1024 VLANs, ít hơn so với 802.1Q (4094 VLANs).
 
-![vlan8](/QuyenNV/CCNA/VLAN_Trunking/images/vlan8.png)
+![vlan8](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan8.png)
 
 Cấu trúc Header ISL (30 byte): 
 
@@ -110,7 +110,7 @@ Cấu trúc Header ISL (30 byte):
 
 ### 2.4. Access port và Trunk port
 
-![vlan9](/QuyenNV/CCNA/VLAN_Trunking/images/vlan9.png)
+![vlan9](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan9.png)
 
 **Access port (Cổng truy nhập)**
 
@@ -124,7 +124,7 @@ Cấu trúc Header ISL (30 byte):
 
 **Trunk port (Cổng trung kế)**
 
-![vlan10](/QuyenNV/CCNA/VLAN_Trunking/images/vlan10.png)
+![vlan10](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan10.png)
 
 - Cổng trung kế (Trunk port) là một kết nối vật lý và logic để hỗ trợ các VLAN trên các Switch liên kết với nhau.
 
@@ -144,7 +144,7 @@ VTP (Vlan Trunking Protocol) là giao thức hoạt động ở tầng liên k�
 
 **Hoạt động của VTP**
 
-![vlan11](/QuyenNV/CCNA/VLAN_Trunking/images/vlan11.png)
+![vlan11](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan11.png)
 
 VTP gửi thông điệp quảng bá qua VTP domain mỗi 5 phút hoặc khi có thay đổi về cấu hình VLAN.
 
@@ -166,7 +166,7 @@ Revision-number là tham số quan trọng:
 
 **Các chế độ hoạt động của VTP**
 
-![vlan12](/QuyenNV/CCNA/VLAN_Trunking/images/vlan12.png)
+![vlan12](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan12.png)
 
 Server Mode:
 
@@ -194,7 +194,7 @@ Transparent Mode:
 
 ### 3.1 Router (Bộ định tuyến)
 
-![vlan14](/QuyenNV/CCNA/VLAN_Trunking/images/vlan14.png)
+![vlan14](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan14.png)
 
 #### 3.1.1. Khái niệm
 
@@ -248,7 +248,7 @@ Transparent Mode:
 
 #### 3.2.1. Switch Layer 2 (L2)
 
-![vlan15](/QuyenNV/CCNA/VLAN_Trunking/images/vlan15.png)
+![vlan15](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan15.png)
 
 - Switch L2 hoạt động ở Layer 2 (Data Link Layer).
 
@@ -284,7 +284,7 @@ Transparent Mode:
 
 #### 3.2.2. Switch Layer 3 (L3)
 
-![vlan16](/QuyenNV/CCNA/VLAN_Trunking/images/vlan16.png)
+![vlan16](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan16.png)
 
 - Switch L3 có thể hoạt động ở cả Layer 2 và Layer 3.
 
@@ -360,7 +360,7 @@ Transparent Mode:
 
 ### 3.4. Hub
 
-![vlan17](/QuyenNV/CCNA/VLAN_Trunking/images/vlan17.png)
+![vlan17](/QuyenNV/1.CCNA/VLAN_Trunking/images/vlan17.png)
 
 #### 3.4.1. Khái niệm
 
