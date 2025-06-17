@@ -28,11 +28,11 @@
 
 ## Bảng định tuyến trên R1
 
-![lab2](/QuyenNV/CCNA/Routing/images/lab2.png)
+![lab2](/QuyenNV/1.CCNA/Routing/images/lab2.png)
 
 ## Bảng định tuyến trên R2
 
-![lab3](/QuyenNV/CCNA/Routing/images/lab3.png)
+![lab3](/QuyenNV/1.CCNA/Routing/images/lab3.png)
 
 # Cấu hình trên PC1
 
@@ -62,12 +62,12 @@ Câu lệnh:
 
 # Ping từ PC1 đến PC2
 
-![lab4](/QuyenNV/CCNA/Routing/images/lab4.png)
+![lab4](/QuyenNV/1.CCNA/Routing/images/lab4.png)
 
 # Ping từ PC2 đến PC1
 
-![lab5](/QuyenNV/CCNA/Routing/images/lab5.png)
+![lab5](/QuyenNV/1.CCNA/Routing/images/lab5.png)
 
 # Quá trình truyền dữ liệu giữa PC1 và PC2 
 
-![lab6](/QuyenNV/CCNA/Routing/images/lab6.png)
+![lab6](/QuyenNV/1.CCNA/Routing/images/lab6.png)

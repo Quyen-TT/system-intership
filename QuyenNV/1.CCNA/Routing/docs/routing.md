@@ -8,17 +8,17 @@
 
 Router thu thập và duy trì các thông tin định tuyến để cho phép truyền và nhận các dữ liệu. Quá trình Routing dựa vào thông tin trên bảng định tuyến (Routing table), là bảng chứa các lộ trình nhanh và tốt nhất đến các mạng khác nhau trên mạng, để hướng các gói dữ liệu đi một cách hiệu quả nhất.
 
-![anh1](/QuyenNV/CCNA/Routing/images/anh1.png)
+![anh1](/QuyenNV/1.CCNA/Routing/images/anh1.png)
 
 Routing table là một dạng database cần thiết để tìm đường đi nhanh nhất (Path determination), nó thể được xây dựng thông qua nhiều cách, có thể là do cấu hình của người quản trị và cũng có thể được tích hợp trong các giao thức định tuyến.
 
-![anh2](/QuyenNV/CCNA/Routing/images/anh2.png)
+![anh2](/QuyenNV/1.CCNA/Routing/images/anh2.png)
 
 ### 1.2 Các loại định tuyến
 
 Routing được chia làm 2 phương thức chính là định tuyến tĩnh và định tuyến động.
 
-![anh3](/QuyenNV/CCNA/Routing/images/anh3.png)
+![anh3](/QuyenNV/1.CCNA/Routing/images/anh3.png)
 
 #### 1.2.1 Định tuyến tĩnh 
 
@@ -66,7 +66,7 @@ Giao thức định tuyến động được chia thành hai nhóm chính:
 
 - EGP (Exterior Gateway Protocol - Giao thức định tuyến liên mạng): Dùng để trao đổi thông tin giữa các hệ thống tự trị khác nhau (AS khác nhau), chủ yếu trên Internet.
 
-![anh12](/QuyenNV/CCNA/Routing/images/anh12.png)
+![anh12](/QuyenNV/1.CCNA/Routing/images/anh12.png)
 
 ### 2.1 RIP (Routing Information Protocol)
 
@@ -86,7 +86,7 @@ Nếu một bộ định tuyến nhận được cập nhật về một đườ
 
 Nếu một bộ định tuyến gặp sự cố hoặc kết nối mạng bị ngắt, mạng phát hiện điều này vì bộ định tuyến đó ngừng gửi cập nhật cho các bộ định tuyến láng giềng của nó, hoặc ngừng gửi và nhận cập nhật qua kết nối bị ngắt. Nếu một tuyến đã cho trong bảng định tuyến không được cập nhật trong sáu chu kỳ cập nhật liên tiếp (tức là trong 180 giây), một bộ định tuyến RIP sẽ loại bỏ tuyến đó và thông báo vấn đề cho mạng thông qua các cập nhật định kỳ của riêng nó.
 
-![anh4](/QuyenNV/CCNA/Routing/images/anh4.png)
+![anh4](/QuyenNV/1.CCNA/Routing/images/anh4.png)
 
 ### 2.2 OSPF (Open Shortest Path First)
 
@@ -96,25 +96,25 @@ OSPF là giao thức định tuyến nội hoạt động dựa vào thuật to�
 
 **b, Cơ chế hoạt động**
 
-![anh5](/QuyenNV/CCNA/Routing/images/anh5.png)
+![anh5](/QuyenNV/1.CCNA/Routing/images/anh5.png)
 
 **Bước 1:** Chọn Router-ID
 
 Giao thức OSPF muốn hoạt động thì phải tạo ra một định danh gọi là Router-ID, với định dạng tương tự như địa chỉ IP.
 
-![anh6](/QuyenNV/CCNA/Routing/images/anh6.png)
+![anh6](/QuyenNV/1.CCNA/Routing/images/anh6.png)
 
 **Bước 2:** Thiết lập quan hệ láng giềng (neighbor) 
 
 Router chạy giao thức định tuyến OSPF thực hiện gửi gói tin HELLO đến các cổng chạy OSPF trên cùng phân đoạn mạng, với tần suất mặc định 10s/lần. Mục đích của quá trình này là để Router tìm kiếm láng giềng, sau đó thiết lập và duy trì mối quan hệ.
 
-![anh7](/QuyenNV/CCNA/Routing/images/anh7.png)
+![anh7](/QuyenNV/1.CCNA/Routing/images/anh7.png)
 
 **Bước 3:** Trao đổi LSDB
 
 LSDB đóng vai trò như tấm bản đồ mạng để Router có căn cứ tính toán định tuyến. Vì thế, LSDB sẽ giống nhau đối với các Router cùng vùng. Mỗi Router tiến hành trao đổi, giao tiếp với nhau theo từng đơn vị thông tin, được gọi là LSA. Tất cả LSA này được chứa trong những gói tin LSU (Link State Update) cụ thể mà các Router đã trao đổi thực tế.
 
-![anh8](/QuyenNV/CCNA/Routing/images/anh8.png)
+![anh8](/QuyenNV/1.CCNA/Routing/images/anh8.png)
 
 **Bước 4:** Tính toán đường đi ngắn nhất
 
@@ -126,7 +126,7 @@ Cost được tính khi đi vào 1 cổng và đi ra không tính.
 
 `Metric = cost = 10^8/Bandwidth (đơn vị bps)`
 
-![anh9](/QuyenNV/CCNA/Routing/images/anh9.png)
+![anh9](/QuyenNV/1.CCNA/Routing/images/anh9.png)
 
 ### 2.3 BGP (Border Gateway Protocol)
 
@@ -134,7 +134,7 @@ Cost được tính khi đi vào 1 cổng và đi ra không tính.
 
 BGP (Border Gateway Protocol) là giao thức định tuyến sử dụng để trao đổi thông tin định tuyến giữa các Hệ thống tự trị.
 
-![anh10](/QuyenNV/CCNA/Routing/images/anh10.png)
+![anh10](/QuyenNV/1.CCNA/Routing/images/anh10.png)
 
 **b, Các loại BGP** 
 
@@ -144,7 +144,7 @@ External BGP là phần mở rộng của BGP. eBGP được sử dụng để t
 
 **c, Cơ chế hoạt động**
 
-![anh11](/QuyenNV/CCNA/Routing/images/anh11.png) 
+![anh11](/QuyenNV/1.CCNA/Routing/images/anh11.png) 
 
 **Bước 1:** Thiết lập kết nối Neighbor (Peer)
 
