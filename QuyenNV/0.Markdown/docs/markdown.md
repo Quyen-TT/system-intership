@@ -49,7 +49,7 @@ Sử dụng cú pháp ![]() để chèn ảnh trong bài viết, với nội dun
 
 Ví dụ: `![Ảnh 1](/QuyenNV/Markdown/images/anh1.png)`
 
-Output: ![Ảnh 1](/QuyenNV/Markdown/images/anh1.png)
+Output: ![Ảnh 1](/QuyenNV/0.Markdown/images/anh1.png)
 
 ### **2.5 Danh sách**
 
