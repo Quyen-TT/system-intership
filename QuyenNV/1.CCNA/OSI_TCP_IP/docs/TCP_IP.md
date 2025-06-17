@@ -19,7 +19,7 @@ Mô hình TCP/IP tiêu chuẩn bao gồm 4 tầng:
 - Tầng 3: Tầng giao vận (Transport)
 - Tầng 4: Tầng ứng dụng (Application)
 
-![OSI10](/QuyenNV/CCNA/OSI_TCP_IP/images/osi10.png)
+![OSI10](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi10.png)
 
 ### 2.1 Tầng truy cập mạng (Network Access layer)
 
@@ -43,7 +43,7 @@ Tầng giao vận xử lý các vấn đề liên quan đến giao tiếp giữa
 
 Tầng này bao 2 gồm giao thức là: TCP (đảm bảo chất lượng dữ liệu) và UDP (truyền tải nhanh hơn nhưng không đảm bảo chất lượng).
 
-![OSI11](/QuyenNV/CCNA/OSI_TCP_IP/images/osi11.png)
+![OSI11](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi11.png)
 
 ### 2.4 Tầng ứng dụng (Application Layer)
 
@@ -77,7 +77,7 @@ Tầng này cung cấp các giao thức ứng dụng như HTTP, SMTP, FTP, ..., 
 
 ## 4. Workflow với mô hình TCP/IP
 
-![OSI16](/QuyenNV/CCNA/OSI_TCP_IP/images/osi16.png)
+![OSI16](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi16.png)
 
 Bước 1: Ở tầng Application, bên A tạo ra dữ liệu, sau đó dữ liệu sẽ được chuyển xuống các tầng thấp hơn. Ở mỗi tầng, một header (và đôi khi là trailer) sẽ được bổ sung để giúp dữ liệu được truyền đi đúng cách.
 
@@ -85,7 +85,7 @@ Bước 2: Tiếp theo, dữ liệu được chuyển xuống tầng Transport, 
 
 ***Thiết lập kết nối: Bắt tay 3 bước***
 
-![OSI13](/QuyenNV/CCNA/OSI_TCP_IP/images/osi13.png)
+![OSI13](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi13.png)
 
 - Bước 1: Máy A khởi tạo kết nối bằng cách gửi một gói tin TCP SYN đến máy B. Gói SYN này chứa số thứ tự ban đầu (Initial Sequence Number - ISN) do máy A chọn (ví dụ: seq = 5432).
 
@@ -99,7 +99,7 @@ Sau khi kết nối được thiết lập, các thiết bị có thể bắt đ
 
 ***Đóng kết nối:***
 
-![OSI15](/QuyenNV/CCNA/OSI_TCP_IP/images/osi15.png)
+![OSI15](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi15.png)
 
 Khi quá trình truyền tải hoàn tất, hai thiết bị có thể đóng kết nối. 
 
@@ -111,7 +111,7 @@ Khi quá trình truyền tải hoàn tất, hai thiết bị có thể đóng k�
 
 - Bước 4: Máy A sẽ gửi một ACK xác nhận việc nhận thông điệp FIN từ Máy B. Kết nối được đóng.
 
-![OSI14](/QuyenNV/CCNA/OSI_TCP_IP/images/osi14.png)
+![OSI14](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi14.png)
 
 Bước 3: Dữ liệu tiếp tục được chuyển xuống tầng Network, tại đây mỗi Segment được đóng gói thành một Packet Header IP sẽ được thêm vào Packet, bao gồm địa chỉ IP nguồn và IP đích. Sau đó, thiết bị thực hiện tìm next-hop (router tiếp theo) để định tuyến gói tin đi đúng hướng.
 
