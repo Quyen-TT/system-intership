@@ -4,7 +4,7 @@
 
 Mô hình OSI (Open Systems Interconnection) là một tập hợp các quy tắc giải thích cách các hệ thống máy tính khác nhau giao tiếp qua mạng. Mô hình OSI bao gồm 7 tầng, mỗi tầng có các chức năng và trách nhiệm riêng biệt. Cách tiếp cận phân tầng này giúp các thiết bị và công nghệ khác nhau có thể hoạt động cùng nhau một cách dễ dàng. Mô hình OSI cung cấp một cấu trúc rõ ràng cho việc truyền dữ liệu và quản lý các vấn đề về mạng. Mô hình OSI được sử dụng rộng rãi như một tài liệu tham khảo để hiểu cách các hệ thống mạng hoạt động.
 
-![OSI1](/QuyenNV/CCNA/OSI_TCP_IP/images/osi1.png)
+![OSI1](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi1.png)
 
 ## 2. Các tầng trong mô hình OSI
 
@@ -14,7 +14,7 @@ Mô hình OSI (Open Systems Interconnection) là một tập hợp các quy tắ
 
 Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục, cáp xoắn đôi), Hub, Repeater, Modem.
 
-![OSI2](/QuyenNV/CCNA/OSI_TCP_IP/images/osi2.png)
+![OSI2](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi2.png)
 
 **Chức năng của tầng vật lý**
 
@@ -38,7 +38,7 @@ Thiết bị liên quan: Cáp mạng (Ethernet, cáp quang, cáp đồng trục,
 
 Thiết bị liên quan: Switch, Bridge, Network Interface Card (NIC - Card mạng).
 
-![OSI3](/QuyenNV/CCNA/OSI_TCP_IP/images/osi3.png)
+![OSI3](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi3.png)
 
 **Chức năng của tầng liên kết dữ liệu**
 
@@ -58,7 +58,7 @@ Thiết bị liên quan: Switch, Bridge, Network Interface Card (NIC - Card mạ
 
 Các giao thức phổ biến: IP (Internet Protocol), ICMP (Internet Control Message Protocol), và ARP (Address Resolution Protocol).
 
-![OSI4](/QuyenNV/CCNA/OSI_TCP_IP/images/osi4.png)
+![OSI4](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi4.png)
 
 **Chức năng của tầng mạng**
 
@@ -82,7 +82,7 @@ Các giao thức phổ biến:
 
 - UDP (User Datagram Protocol): Gửi dữ liệu nhanh nhưng không đảm bảo đầy đủ (kết nối không đáng tin cậy).
 
-![OSI5](/QuyenNV/CCNA/OSI_TCP_IP/images/osi5.png)
+![OSI5](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi5.png)
 
 **Chức năng của tầng giao vận**
 
@@ -100,7 +100,7 @@ Các giao thức phổ biến:
 
 Các giao thức phổ biến: NetBIOS, RPC (Remote Procedure Call), PPTP (Point-to-Point Tunneling Protocol).
 
-![OSI6](/QuyenNV/CCNA/OSI_TCP_IP/images/osi6.png)
+![OSI6](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi6.png)
 
 **Chức năng của tầng phiên**
 
@@ -120,7 +120,7 @@ Các giao thức phổ biến:
 - JPEG, PNG (Định dạng ảnh).
 - MP3, MP4 (Định dạng âm thanh, video).
 
-![OSI7](/QuyenNV/CCNA/OSI_TCP_IP/images/osi7.png)
+![OSI7](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi7.png)
 
 **Chức năng của tầng phiên**
 
@@ -142,7 +142,7 @@ Các giao thức phổ biến:
 - SMTP, POP3, IMAP (Email).
 - DNS (Chuyển đổi tên miền thành địa chỉ IP).
 
-![OSI8](/QuyenNV/CCNA/OSI_TCP_IP/images/osi8.png)
+![OSI8](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi8.png)
 
 **Chức năng của tầng phiên**
 
@@ -156,9 +156,9 @@ Các giao thức phổ biến:
 
 ## 3. Workflow với mô hình OSI
 
-![OSI9](/QuyenNV/CCNA/OSI_TCP_IP/images/osi9.png)
+![OSI9](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi9.png)
 
-![OSI12](/QuyenNV/CCNA/OSI_TCP_IP/images/osi12.png)
+![OSI12](/QuyenNV/1.CCNA/OSI_TCP_IP/images/osi12.png)
 
 Khi A gửi một dữ liệu đến B thì dữ liệu sẽ trải qua 2 tiến trình cơ bản là:
 
