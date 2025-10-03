@@ -8,7 +8,7 @@ Truy cập trang tải chính thức của Rocky Linux và chọn phiên bản I
 
 Ở đây ta chọn bản Rocky Linux 9 bản Minimal iso cho nhẹ.
 
-![rk1](/../2.VMWare/images/rk1.png)
+![rk1](/QuyenNV/2.VMWare/images/rk1.png)
 
 ## Bước 2: Tạo máy ảo trên VMware 
 
@@ -18,7 +18,7 @@ Làm tương tự hướng dẫn trong link trên: [Tạo máy ảo](https://git
 
 **Chọn ngôn ngữ:**
 
-![rk2](/../2.VMWare/images/rk2.png)
+![rk2](/QuyenNV//2.VMWare/images/rk2.png)
 
 **Bảng tóm tắt các thiết lập (Installation Summary):**
 
@@ -36,13 +36,13 @@ Trên màn hình này bạn sẽ cấu hình các mục như:
 
 - Mật khẩu root và tạo người dùng (Root Password & User Creation)
 
-![rk3](/../2.VMWare/images/rk3.png)
+![rk3](/QuyenNV/2.VMWare/images/rk3.png)
 
 **Installation Destination:**
 
 Trong mục `Installation Destination`, ta chọn `Custom`, nhấn `Done` để mở cửa sổ `Manual Partitioning`
 
-![rk4](/../2.VMWare/images/rk4.png)
+![rk4](/QuyenNV/2.VMWare/images/rk4.png)
 
 Trong cửa sổ Manual Partitioning, bạn sẽ tự tạo các phân vùng và chọn hệ thống tệp (filesystem) cho từng phân vùng.
 
@@ -54,7 +54,7 @@ Trong cửa sổ Manual Partitioning, bạn sẽ tự tạo các phân vùng và
 
 - Sau khi hoàn tất, nhấn Done để thoát khỏi trình quản lý phân vùng.
 
-![rk5](/../2.VMWare/images/rk5.png)
+![rk5](/QuyenNV/2.VMWare/images/rk5.png)
 
 Ở đây, ta sẽ tạo các phân vùng như sau:
 
@@ -64,7 +64,7 @@ Trong cửa sổ Manual Partitioning, bạn sẽ tự tạo các phân vùng và
 
 - `swap`: 8 GiB
 
-![rk6](/../2.VMWare/images/rk6.png)
+![rk6](/QuyenNV/2.VMWare/images/rk6.png)
 
 Hệ thống sẽ hiển thị cửa sổ Summary of Changes (tóm tắt các thay đổi phân vùng):
 
@@ -72,15 +72,15 @@ Hệ thống sẽ hiển thị cửa sổ Summary of Changes (tóm tắt các th
 
 - Nhấn Cancel nếu muốn quay lại và chỉnh sửa lại các phân vùng.
 
-![rk7](/../2.VMWare/images/rk7.png)
+![rk7](/QuyenNV/2.VMWare/images/rk7.png)
 
 **Mật khẩu root:**  
 
-![rk8](/../2.VMWare/images/rk8.png)
+![rk8](/QuyenNV/2.VMWare/images/rk8.png)
 
 **Tạo người dùng mới:**
 
-![rk9](/../2.VMWare/images/rk9.png)
+![rk9](/QuyenNV/2.VMWare/images/rk9.png)
 
 Ta có thể chọn `Make this user administrator` để cấp quyền sudo
 
@@ -88,14 +88,14 @@ Ta có thể chọn `Make this user administrator` để cấp quyền sudo
 
 Khi mọi thiết lập đã xong, nhấn `Begin Installation`
 
-![rk10](/../2.VMWare/images/rk10.png)
+![rk10](/QuyenNV/2.VMWare/images/rk10.png)
 
 Quá trình cài đặt diễn ra
 
-![rk11](/../2.VMWare/images/rk11.png)
+![rk11](/QuyenNV/2.VMWare/images/rk11.png)
 
 Nhấn `Reboot System` để khởi động vào hệ thống Rocky Linux mới
 
 **Quá trình cài đặt hoàn tất:**
 
-![rk12](/../2.VMWare/images/rk12.png)
+![rk12](/QuyenNV/2.VMWare/images/rk12.png)
